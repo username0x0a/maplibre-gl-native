@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061A98D828E8FC66004BAD92 /* MetalANGLE.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98D728E8FC66004BAD92 /* MetalANGLE.xcframework */; };
+		061A98D928E8FC66004BAD92 /* MetalANGLE.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98D728E8FC66004BAD92 /* MetalANGLE.xcframework */; };
+		061A98DA28E8FC66004BAD92 /* MetalANGLE.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98D728E8FC66004BAD92 /* MetalANGLE.xcframework */; };
+		061A98DD28E8FC96004BAD92 /* MetalANGLE.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98D728E8FC66004BAD92 /* MetalANGLE.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		061A98DF28E8FDBB004BAD92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98DE28E8FDBB004BAD92 /* CoreGraphics.framework */; };
+		061A98E128E8FDC1004BAD92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98E028E8FDC0004BAD92 /* UIKit.framework */; };
+		061A98E328E8FDC8004BAD92 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98E228E8FDC8004BAD92 /* CoreLocation.framework */; };
+		061A98E528E8FDCD004BAD92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98E428E8FDCD004BAD92 /* Foundation.framework */; };
+		061A98E728E8FDDA004BAD92 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A98E628E8FDDA004BAD92 /* QuartzCore.framework */; };
 		06333E5F28E852CF00E757FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E5E28E852CF00E757FA /* CoreGraphics.framework */; };
 		06333E6128E852E100E757FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6028E852E100E757FA /* QuartzCore.framework */; };
 		06333E6328E852F800E757FA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6228E852F800E757FA /* ImageIO.framework */; };
@@ -16,9 +25,6 @@
 		06333E6B28E8536C00E757FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6A28E8536C00E757FA /* UIKit.framework */; };
 		06333E6D28E8537600E757FA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6C28E8537500E757FA /* CoreImage.framework */; };
 		06333E6F28E8538100E757FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6E28E8538100E757FA /* SystemConfiguration.framework */; };
-		06FC989028DE528A007C9705 /* MetalANGLE in Frameworks */ = {isa = PBXBuildFile; productRef = 06FC988F28DE528A007C9705 /* MetalANGLE */; };
-		06FC989128DE5299007C9705 /* MetalANGLE in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06FC988E28DE5278007C9705 /* MetalANGLE */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		06FC989328DE52B0007C9705 /* MetalANGLE in Frameworks */ = {isa = PBXBuildFile; productRef = 06FC989228DE52B0007C9705 /* MetalANGLE */; };
 		071BBAFF1EE7613E001FB02A /* MGLImageSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 071BBAFD1EE75CD4001FB02A /* MGLImageSource.mm */; };
 		071BBB001EE7613F001FB02A /* MGLImageSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 071BBAFD1EE75CD4001FB02A /* MGLImageSource.mm */; };
 		071BBB031EE76146001FB02A /* MGLImageSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 071BBAFC1EE75CD4001FB02A /* MGLImageSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -750,7 +756,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				06FC989128DE5299007C9705 /* MetalANGLE in Embed Frameworks */,
+				061A98DD28E8FC96004BAD92 /* MetalANGLE.xcframework in Embed Frameworks */,
 				CA94E5FC237D21030037AEA0 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -790,6 +796,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		061A98D728E8FC66004BAD92 /* MetalANGLE.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MetalANGLE.xcframework; path = ../../vendor/MetalANGLE.xcframework; sourceTree = "<group>"; };
+		061A98DE28E8FDBB004BAD92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		061A98E028E8FDC0004BAD92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		061A98E228E8FDC8004BAD92 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		061A98E428E8FDCD004BAD92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		061A98E628E8FDDA004BAD92 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		06333E5E28E852CF00E757FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		06333E6028E852E100E757FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		06333E6228E852F800E757FA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
@@ -799,7 +811,6 @@
 		06333E6A28E8536C00E757FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		06333E6C28E8537500E757FA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		06333E6E28E8538100E757FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		06FC988E28DE5278007C9705 /* MetalANGLE */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MetalANGLE; path = vendor/MetalANGLE; sourceTree = "<group>"; };
 		071BBAFC1EE75CD4001FB02A /* MGLImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLImageSource.h; sourceTree = "<group>"; };
 		071BBAFD1EE75CD4001FB02A /* MGLImageSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MGLImageSource.mm; sourceTree = "<group>"; };
 		071BBB051EE7761A001FB02A /* MGLImageSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGLImageSourceTests.m; path = ../../darwin/test/MGLImageSourceTests.m; sourceTree = "<group>"; };
@@ -1401,8 +1412,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06FC989028DE528A007C9705 /* MetalANGLE in Frameworks */,
+				061A98DF28E8FDBB004BAD92 /* CoreGraphics.framework in Frameworks */,
+				061A98E528E8FDCD004BAD92 /* Foundation.framework in Frameworks */,
+				061A98E728E8FDDA004BAD92 /* QuartzCore.framework in Frameworks */,
+				061A98E328E8FDC8004BAD92 /* CoreLocation.framework in Frameworks */,
+				061A98E128E8FDC1004BAD92 /* UIKit.framework in Frameworks */,
 				CA94E5FB237D21030037AEA0 /* Mapbox.framework in Frameworks */,
+				061A98D828E8FC66004BAD92 /* MetalANGLE.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1413,6 +1429,7 @@
 				DA35D9D52409925E0013ECB0 /* libsqlite3.tbd in Frameworks */,
 				DA35D9D6240992760013ECB0 /* libz.tbd in Frameworks */,
 				DA35D9D4240992400013ECB0 /* libmbgl-vendor-csscolorparser.a in Frameworks */,
+				061A98DA28E8FC66004BAD92 /* MetalANGLE.xcframework in Frameworks */,
 				CA0FAA05237B3BB700C9F3C9 /* Mapbox.framework in Frameworks */,
 				1F78399E235AA1E600D4D606 /* libmbgl-core.a in Frameworks */,
 			);
@@ -1422,7 +1439,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06FC989328DE52B0007C9705 /* MetalANGLE in Frameworks */,
 				06333E6528E8530400E757FA /* CoreLocation.framework in Frameworks */,
 				06333E6D28E8537600E757FA /* CoreImage.framework in Frameworks */,
 				DA0BDD202407C12600DAA576 /* libmbgl-core.a in Frameworks */,
@@ -1430,6 +1446,7 @@
 				DA35D9CE240920AB0013ECB0 /* libmbgl-vendor-csscolorparser.a in Frameworks */,
 				06333E6F28E8538100E757FA /* SystemConfiguration.framework in Frameworks */,
 				06333E6B28E8536C00E757FA /* UIKit.framework in Frameworks */,
+				061A98D928E8FC66004BAD92 /* MetalANGLE.xcframework in Frameworks */,
 				06333E6328E852F800E757FA /* ImageIO.framework in Frameworks */,
 				06333E5F28E852CF00E757FA /* CoreGraphics.framework in Frameworks */,
 				358B3DBB2359EA0F007BEB26 /* libmbgl-vendor-icu.a in Frameworks */,
@@ -1896,6 +1913,12 @@
 		DA1DC9921CB6DF24006E619F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				061A98E628E8FDDA004BAD92 /* QuartzCore.framework */,
+				061A98E428E8FDCD004BAD92 /* Foundation.framework */,
+				061A98E228E8FDC8004BAD92 /* CoreLocation.framework */,
+				061A98E028E8FDC0004BAD92 /* UIKit.framework */,
+				061A98DE28E8FDBB004BAD92 /* CoreGraphics.framework */,
+				061A98D728E8FC66004BAD92 /* MetalANGLE.xcframework */,
 				06333E6E28E8538100E757FA /* SystemConfiguration.framework */,
 				06333E6C28E8537500E757FA /* CoreImage.framework */,
 				06333E6A28E8536C00E757FA /* UIKit.framework */,
@@ -1905,7 +1928,6 @@
 				06333E6228E852F800E757FA /* ImageIO.framework */,
 				06333E6028E852E100E757FA /* QuartzCore.framework */,
 				06333E5E28E852CF00E757FA /* CoreGraphics.framework */,
-				06FC988E28DE5278007C9705 /* MetalANGLE */,
 				DA4A26961CB6E795000B7809 /* Mapbox.framework */,
 				1F78399D235AA1E600D4D606 /* libmbgl-core.a */,
 				DA35D9CC240920910013ECB0 /* libmbgl-vendor-csscolorparser.a */,
@@ -2718,7 +2740,6 @@
 			);
 			name = iosapp;
 			packageProductDependencies = (
-				06FC988F28DE528A007C9705 /* MetalANGLE */,
 			);
 			productName = iosapp;
 			productReference = DA1DC94A1CB6C1C2006E619F /* MapLibre GL.app */;
@@ -2757,7 +2778,6 @@
 			);
 			name = dynamic;
 			packageProductDependencies = (
-				06FC989228DE52B0007C9705 /* MetalANGLE */,
 			);
 			productName = framework;
 			productReference = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */;
@@ -4862,17 +4882,6 @@
 			defaultConfigurationName = RelWithDebInfo;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		06FC988F28DE528A007C9705 /* MetalANGLE */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MetalANGLE;
-		};
-		06FC989228DE52B0007C9705 /* MetalANGLE */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MetalANGLE;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA1DC9421CB6C1C2006E619F /* Project object */;
 }
