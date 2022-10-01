@@ -3,11 +3,11 @@
 #include "TargetConditionals.h"
 
 #if TARGET_OS_IPHONE
-    #include <OpenGLES/ES2/gl.h>
-    #include <OpenGLES/ES2/glext.h>
+    #include <MetalANGLE/GLES2/gl2.h>
+    #include <MetalANGLE/GLES2/gl2ext.h>
 #elif TARGET_OS_SIMULATOR
-    #include <OpenGLES/ES2/gl.h>
-    #include <OpenGLES/ES2/glext.h>
+    #include <MetalANGLE/GLES2/gl2.h>
+    #include <MetalANGLE/GLES2/gl2ext.h>
 #elif TARGET_OS_MAC
     #include <OpenGL/OpenGL.h>
     #include <OpenGL/gl.h>

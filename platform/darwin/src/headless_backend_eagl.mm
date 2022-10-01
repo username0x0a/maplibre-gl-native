@@ -1,6 +1,6 @@
 #include <mbgl/gl/headless_backend.hpp>
 
-#include <OpenGLES/EAGL.h>
+#include <MetalANGLE/MGLContext.h>
 
 #include <stdexcept>
 
@@ -10,11 +10,11 @@ namespace gl {
 class EAGLBackendImpl : public HeadlessBackend::Impl {
 public:
     EAGLBackendImpl() {
-        glContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+        glContext = [[MGLContext alloc] initWithAPI:kMGLRenderingAPIOpenGLES2];
         if (glContext == nil) {
             throw std::runtime_error("Error creating GL context object");
         }
-        glContext.multiThreaded = YES;
+//        glContext.multiThreaded = YES;
     }
 
     // Required for ARC to deallocate correctly.
@@ -31,15 +31,15 @@ public:
     }
 
     void activateContext() final {
-        [EAGLContext setCurrentContext:glContext];
+        [MGLContext setCurrentContext:glContext];
     }
 
     void deactivateContext() final {
-        [EAGLContext setCurrentContext:nil];
+        [MGLContext setCurrentContext:nil];
     }
 
 private:
-    EAGLContext* glContext = nullptr;
+    MGLContext* glContext = nullptr;
 };
 
 void HeadlessBackend::createImpl() {

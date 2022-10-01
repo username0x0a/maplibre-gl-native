@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06333E5F28E852CF00E757FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E5E28E852CF00E757FA /* CoreGraphics.framework */; };
+		06333E6128E852E100E757FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6028E852E100E757FA /* QuartzCore.framework */; };
+		06333E6328E852F800E757FA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6228E852F800E757FA /* ImageIO.framework */; };
+		06333E6528E8530400E757FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6428E8530400E757FA /* CoreLocation.framework */; };
+		06333E6728E8531200E757FA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6628E8531200E757FA /* CoreText.framework */; };
+		06333E6928E8536100E757FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6828E8536100E757FA /* Foundation.framework */; };
+		06333E6B28E8536C00E757FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6A28E8536C00E757FA /* UIKit.framework */; };
+		06333E6D28E8537600E757FA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6C28E8537500E757FA /* CoreImage.framework */; };
+		06333E6F28E8538100E757FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06333E6E28E8538100E757FA /* SystemConfiguration.framework */; };
 		06FC989028DE528A007C9705 /* MetalANGLE in Frameworks */ = {isa = PBXBuildFile; productRef = 06FC988F28DE528A007C9705 /* MetalANGLE */; };
 		06FC989128DE5299007C9705 /* MetalANGLE in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06FC988E28DE5278007C9705 /* MetalANGLE */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		06FC989328DE52B0007C9705 /* MetalANGLE in Frameworks */ = {isa = PBXBuildFile; productRef = 06FC989228DE52B0007C9705 /* MetalANGLE */; };
@@ -781,6 +790,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06333E5E28E852CF00E757FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		06333E6028E852E100E757FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		06333E6228E852F800E757FA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		06333E6428E8530400E757FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		06333E6628E8531200E757FA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		06333E6828E8536100E757FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		06333E6A28E8536C00E757FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		06333E6C28E8537500E757FA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		06333E6E28E8538100E757FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		06FC988E28DE5278007C9705 /* MetalANGLE */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MetalANGLE; path = vendor/MetalANGLE; sourceTree = "<group>"; };
 		071BBAFC1EE75CD4001FB02A /* MGLImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLImageSource.h; sourceTree = "<group>"; };
 		071BBAFD1EE75CD4001FB02A /* MGLImageSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MGLImageSource.mm; sourceTree = "<group>"; };
@@ -1405,12 +1423,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FC989328DE52B0007C9705 /* MetalANGLE in Frameworks */,
+				06333E6528E8530400E757FA /* CoreLocation.framework in Frameworks */,
+				06333E6D28E8537600E757FA /* CoreImage.framework in Frameworks */,
 				DA0BDD202407C12600DAA576 /* libmbgl-core.a in Frameworks */,
 				CAB369E5237471D600592F74 /* libz.tbd in Frameworks */,
 				DA35D9CE240920AB0013ECB0 /* libmbgl-vendor-csscolorparser.a in Frameworks */,
+				06333E6F28E8538100E757FA /* SystemConfiguration.framework in Frameworks */,
+				06333E6B28E8536C00E757FA /* UIKit.framework in Frameworks */,
+				06333E6328E852F800E757FA /* ImageIO.framework in Frameworks */,
+				06333E5F28E852CF00E757FA /* CoreGraphics.framework in Frameworks */,
 				358B3DBB2359EA0F007BEB26 /* libmbgl-vendor-icu.a in Frameworks */,
+				06333E6928E8536100E757FA /* Foundation.framework in Frameworks */,
+				06333E6728E8531200E757FA /* CoreText.framework in Frameworks */,
 				DA35D9D1240920B60013ECB0 /* libmbgl-vendor-parsedate.a in Frameworks */,
 				358B3DB92359E4A0007BEB26 /* libsqlite3.tbd in Frameworks */,
+				06333E6128E852E100E757FA /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1869,6 +1896,15 @@
 		DA1DC9921CB6DF24006E619F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06333E6E28E8538100E757FA /* SystemConfiguration.framework */,
+				06333E6C28E8537500E757FA /* CoreImage.framework */,
+				06333E6A28E8536C00E757FA /* UIKit.framework */,
+				06333E6828E8536100E757FA /* Foundation.framework */,
+				06333E6628E8531200E757FA /* CoreText.framework */,
+				06333E6428E8530400E757FA /* CoreLocation.framework */,
+				06333E6228E852F800E757FA /* ImageIO.framework */,
+				06333E6028E852E100E757FA /* QuartzCore.framework */,
+				06333E5E28E852CF00E757FA /* CoreGraphics.framework */,
 				06FC988E28DE5278007C9705 /* MetalANGLE */,
 				DA4A26961CB6E795000B7809 /* Mapbox.framework */,
 				1F78399D235AA1E600D4D606 /* libmbgl-core.a */,
@@ -3733,6 +3769,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 15256;
@@ -4334,6 +4371,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 15256;
@@ -4361,6 +4399,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 15256;
