@@ -18,6 +18,12 @@ project("Mapbox GL Native" LANGUAGES CXX C)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER Core)
 
+set(CLANG_MODULES_AUTOLINK OFF)
+set(ENABLE_BITCODE OFF)
+
+set_property(GLOBAL PROPERTY CLANG_MODULES_AUTOLINK OFF)
+set_property(GLOBAL PROPERTY ENABLE_BITCODE OFF)
+
 set(
     MEMORYCHECK_COMMAND_OPTIONS
     "--leak-check=full --gen-suppressions=all --error-exitcode=1 --suppressions=${PROJECT_SOURCE_DIR}/scripts/valgrind.sup"

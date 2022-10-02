@@ -4,6 +4,12 @@ if(NOT DEFINED IOS_DEPLOYMENT_TARGET)
     set(IOS_DEPLOYMENT_TARGET "9.0")
 endif()
 
+set(CLANG_MODULES_AUTOLINK OFF)
+set(ENABLE_BITCODE OFF)
+
+set_property(GLOBAL PROPERTY CLANG_MODULES_AUTOLINK OFF)
+set_property(GLOBAL PROPERTY ENABLE_BITCODE OFF)
+
 # Override default CMake NATIVE_ARCH_ACTUAL
 # https://gitlab.kitware.com/cmake/cmake/-/issues/20893
 # https://stackoverflow.com/a/22689917/5531400
