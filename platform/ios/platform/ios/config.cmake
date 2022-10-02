@@ -2,6 +2,7 @@ set(USE_GLES2 ON)
 
 macro(initialize_ios_target target)
     set_xcode_property(${target} IPHONEOS_DEPLOYMENT_TARGET "9.0")
+    set_xcode_property(${target} CLANG_MODULES_AUTOLINK "NO")
     set_xcode_property(${target} ENABLE_BITCODE "NO")
     set_xcode_property(${target} ONLY_ACTIVE_ARCH $<$<CONFIG:Debug>:YES>)
 
